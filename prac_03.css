@@ -29,7 +29,7 @@ nav{
     text-align: center;
     top: 100%;
     left: 0;
-    background-color: black;
+    background-color: #ea8823;
     width: 100%;
     transform: scale(1,0); 
     transform-origin: top;
@@ -54,12 +54,9 @@ nav a{
     text-decoration: none;
     font-size: 1.375rem;
     text-transform: uppercase;
-
     opacity: 0;
     transition: opacity 150ms ease-in-out;
-
     cursor: pointer;
-    
     font-family: 'Aladin';
    
 
@@ -96,7 +93,7 @@ nav a:hover{
     height: 100%;
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: #ea8823;
     
 }
 .nav-toggle-label span,
@@ -170,7 +167,7 @@ nav a:hover{
 
 
 .pimg1{
-    background-image: url(img/image1.jpg);
+    background-image: url(img/LOCK_PNG_FOrmat.png);
     min-height: 100%;
 }
 
@@ -200,8 +197,8 @@ nav a:hover{
 }
 
 .section-light{
-    background-color: #f4f4f4;
-    color: #666;
+    background-color: #282e34;
+    color: #ddd;
 }
 
 .section-dark{
@@ -220,7 +217,7 @@ nav a:hover{
     text-transform: uppercase;
 }
 .ptext .border{
-    background-color: #996000;
+    background-color: #ea8823;
     color: #fff;
     padding: 20px;
     opacity: 0.95;
