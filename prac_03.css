@@ -228,7 +228,8 @@ nav a:hover{
 }
 .ptext .border{
     /* background-color: #8e48ff; */
-    background-color: #8830df;
+    /* background-color: #8830df; */
+    background-color: #6265fb;
     color: black;
     padding: 20px;
     opacity: 1;
