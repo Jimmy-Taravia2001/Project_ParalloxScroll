@@ -1,7 +1,10 @@
 # Project_ParalloxScroll
+First of all thank you to all to stop by and taking out time to contribute on this project.
 This is a parallax scrolling effect project for for HTML and CSS.
 
-Do your contribution and work on making this parallox website having a great UI/UX structure. Make sure you try different colors, fonts, animation, and take full advantage of contribution and do your best. 
+One of the goals to create this project of parallox scrolling is to crearte a beatiful travelling topic website i.e website containing and giving experiencce of travelling. 
+
+Add your contribution and work on making this parallox website having a great UI/UX structure. Make sure you try different colors, fonts, animation, and take full advantage of contribution and do your best. 
 
 ISSUE:
 1) MAke UI/UX of the page better.
