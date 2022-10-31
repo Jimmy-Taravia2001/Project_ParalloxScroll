@@ -1,5 +1,5 @@
-body, html 
-{
+body,
+html {
     height: 100%;
     margin: 0;
     font-size: 16px;
@@ -8,10 +8,9 @@ body, html
     line-height: 1.8em;
     color: #666;
     scroll-behavior: smooth;
-    
 }
 
-header{              
+header {
     /* background-color: #8e48ff; */
     background-color: #ea8823;
     text-align: center;
@@ -22,36 +21,41 @@ header{
     font-family: 'Allerta Stencil';
     font-weight: bold;
 }
-.logo{
+
+.logo {
     /* font-family: 'Aladin'; */
     letter-spacing: 2px;
     color: white;
+    font-family: Sora, sans-serif;
 }
-nav{
+
+nav {
     position: absolute;
     text-align: center;
     top: 100%;
     left: 0;
     background-color: #ea8823;
     width: 100%;
-    transform: scale(1,0); 
+    transform: scale(1, 0);
     transform-origin: top;
     transition: 400ms ease-in-out;
     font-family: 'Allerta Stencil';
     font-size: 23px;
 }
-nav ul{
+
+nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     font-family: 'Allerta Stencil';
-    
 }
-nav li{
+
+nav li {
     margin-bottom: 1em;
     margin-left: 1em;
 }
-nav a{
+
+nav a {
     color: black;
     font-weight: bold;
     text-decoration: none;
@@ -61,47 +65,51 @@ nav a{
     transition: opacity 150ms ease-in-out;
     cursor: pointer;
     font-family: 'Allerta Stencil';
-   
-
 }
-nav a:hover{
 
+nav a:hover {
     cursor: pointer;
     animation: fadeIn ease-in 0.57s;
     animation-iteration-count: 2;
-    color: #727896;      
+    color: #727896;
 }
+
 @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.nav-toggle:checked ~ nav{
-    transform: scale(1,1);
-
+.nav-toggle:checked~nav {
+    transform: scale(1, 1);
 }
-.nav-toggle:checked ~ nav a{
+
+.nav-toggle:checked~nav a {
     opacity: 1;
 }
-.nav-toggle{
+
+.nav-toggle {
     display: none;
 }
-.nav-toggle-label{
+
+.nav-toggle-label {
     position: absolute;
     top: 0;
     left: 0;
-    
     margin-left: 1em;
     /* border: 1px solid black; */
     height: 100%;
     display: flex;
     align-items: center;
     background-color: #ea8823;
-    
 }
+
 .nav-toggle-label span,
 .nav-toggle-label span::before,
-.nav-toggle-label span::after{
+.nav-toggle-label span::after {
     display: block;
     background: white;
     height: 2px;
@@ -109,82 +117,84 @@ nav a:hover{
     border-radius: 2px;
     position: relative;
 }
+
 .nav-toggle-label span::before,
-.nav-toggle-label span::after{
+.nav-toggle-label span::after {
     content: '';
     position: absolute;
 }
-.nav-toggle-label span::before{
+
+.nav-toggle-label span::before {
     bottom: 6px;
 }
-.nav-toggle-label span::after{
+
+.nav-toggle-label span::after {
     top: 6px;
 }
-@media screen and (min-width: 800px){
-    .nav-toggle-label{
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
         display: none;
     }
-    header{
+    header {
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 4fr) 1fr;
     }
-    .logo{
-        grid-column: 2 / 3; 
-        color: white;   
-        font-family: 'Allerta Stencil';
+    .logo {
+        grid-column: 2 / 3;
+        color: white;
+        font-family: Sora, sans-serif;
         letter-spacing: 2px;
         font-size: 32px;
         cursor: pointer;
         font-weight: bold;
-        
     }
-    .logo:hover{
+    .logo:hover {
         animation: fadeIn ease-in 0.57s;
         animation-iteration-count: 2;
     }
-    
-    nav{
+    nav {
         all: unset;
         grid-column: 3/4;
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
-    nav a{
+    nav a {
         opacity: 1;
     }
-    nav ul{
-        display: flex;  
+    nav ul {
+        display: flex;
     }
-    nav li{
+    nav li {
         margin-left: 3em;
         margin-bottom: 0;
-        text-align: center;   
+        text-align: center;
     }
-    nav a:hover{
+    nav a:hover {
         cursor: pointer;
         font-weight: bold;
     }
 }
 
-
-
-.pimg1{
+.pimg1 {
     background-image: url(img/LOCK_PNG_FOrmat.png);
     min-height: 100%;
 }
 
-.pimg2{
+.pimg2 {
     background-image: url(img/image2.jpg);
     min-height: 100%;
 }
 
-.pimg3{
+.pimg3 {
     background-image: url(img/image3.jpg);
     min-height: 100%;
 }
 
-.pimg1, .pimg2, .pimg3{
+.pimg1,
+.pimg2,
+.pimg3 {
     position: relative;
     opacity: 0.7;
     background-position: center;
@@ -192,29 +202,28 @@ nav a:hover{
     background-repeat: no-repeat;
     /*parallax mode starts here*/
     background-attachment: fixed;
-} 
+}
 
-.section{
+.section {
     text-align: center;
     padding: 40px 60px;
 }
 
-.section-light{
-    
-    background-color: #282e34; 
-    color: #ea8823;
-    font-family: 'Cabin';
-    letter-spacing: 2px;
-}
-
-.section-dark{
+.section-light {
     background-color: #282e34;
     color: #ea8823;
     font-family: 'Cabin';
     letter-spacing: 2px;
 }
 
-.ptext{
+.section-dark {
+    background-color: #282e34;
+    color: #ea8823;
+    font-family: 'Cabin';
+    letter-spacing: 2px;
+}
+
+.ptext {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -223,35 +232,34 @@ nav a:hover{
     font-size: 27px;
     letter-spacing: 8px;
     text-transform: uppercase;
-    
-    
+    border-radius: 15px;
 }
-.ptext .border{
+
+.ptext .border {
     /* background-color: #8e48ff; */
     /* background-color: #8830df; */
-    background-color: #6265fb;
-    color: black;
+    background-color: #131313;
+    color: #ddd;
     padding: 20px;
     opacity: 1;
     font-family: 'Allerta Stencil';
     font-weight: bold;
+    border-radius: 15px;
 }
-.ptext .border:hover{
+
+.ptext .border:hover {
     /* box-shadow: 0px 0px 25px 10px #fff; */
     cursor: pointer;
     opacity: 1;
 }
 
-
-
-@media(max-width:460px){
-    .ptext{
+@media(max-width:460px) {
+    .ptext {
         font-size: 16px;
     }
 }
 
-
-@media(min-width: 460px){
+@media(min-width: 460px) {
     /* .pimg1 .border::before{
         content: '';
         display: block;
@@ -264,12 +272,9 @@ nav a:hover{
         transform: scale(0, 1);
         transition: transform ease-in-out 250ms;
     } */
-    
     /* .border:hover::before{
         transform: scale(1, 1);
     } */
-    
-    
     /* .pimg1 .border::after{
         content: '';
         display: block;
@@ -282,7 +287,6 @@ nav a:hover{
         transform: scale(0, 1);
         transition: transform ease-in-out 250ms;
     } */
-    
     /* .border:hover::after{
         transform: scale(1, 1);
     } */
